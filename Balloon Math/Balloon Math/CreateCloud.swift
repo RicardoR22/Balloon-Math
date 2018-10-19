@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-
+//Class for creating Clouds
 class Cloud: SKSpriteNode {
     var answerValue: Int
     var answerLabel = SKLabelNode(text: "2")
@@ -26,10 +26,7 @@ class Cloud: SKSpriteNode {
         answerLabel.fontColor = .black
         answerLabel.text = String(self.answerValue)
         
-        
-//        self.physicsBody?.categoryBitMask = 2
-//        self.physicsBody?.collisionBitMask = 2
-//        self.physicsBody?.isDynamic = false
+ 
         addChild(answerLabel)
         
     }
